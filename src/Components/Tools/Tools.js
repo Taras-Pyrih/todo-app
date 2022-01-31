@@ -1,21 +1,23 @@
-import './Tools.css';
+import './Tools.scss';
 import React, { useState } from 'react';
 
 export const Tools = props => {
   const [task, setTask] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     setTask(e.target.value);
   }
 
-  const handleClick = (e) => {
+  const handleClick = e => {
     e.preventDefault();
 
-    const currentTasksArray = props.currentTasksArray;
-    const newTasksArray = [...currentTasksArray, task];
-
-    props.onAddTask(newTasksArray);
-    setTask('');
+    if (task != '') {
+      const currentTasksArray = props.currentTasksArray;
+      const newTasksArray = [...currentTasksArray, task];
+      
+      props.onAddTask(newTasksArray);
+      setTask('');
+    }
   }
 
   return (

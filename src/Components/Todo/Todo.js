@@ -1,4 +1,4 @@
-import './Todo.css';
+import './Todo.scss';
 import React, { useState } from 'react';
 import { Tools } from '../Tools/Tools.js';
 import { TodoList } from '../TodoList/TodoList.js';

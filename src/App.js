@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { Todo } from './Components/Todo/Todo.js';
 
 export const App = () => {

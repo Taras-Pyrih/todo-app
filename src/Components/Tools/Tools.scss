@@ -1,0 +1,22 @@
+$class: Tools;
+$property: padding;
+
+.#{$class} {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  #{$property}: 0 30px;
+
+  $color: darkblue;
+
+  input {
+    #{$property}: 10px 5px;
+    border: 2px solid $color;
+  }
+  
+  button {
+    background: $color;
+    #{$property}: 0 5px;
+    color: #FFFFFF;
+  }
+}
