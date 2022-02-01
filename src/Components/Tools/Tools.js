@@ -12,10 +12,7 @@ export const Tools = props => {
     e.preventDefault();
 
     if (task != '') {
-      const currentTasksArray = props.currentTasksArray;
-      const newTasksArray = [...currentTasksArray, task];
-      
-      props.onAddTask(newTasksArray);
+      props.onAddTask(task);
       setTask('');
     }
   }
